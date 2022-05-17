@@ -22,13 +22,13 @@ public class Radio {
     }
 
     public void increaseVolume() {
-        if (currentVolume > 0) {
+        if (currentVolume < 10) {
             currentVolume = currentVolume + 1;
         }
     }
 
     public void decreaseVolume() {
-        if (currentVolume < 10) {
+        if (currentVolume > 0) {
             currentVolume = currentVolume - 1;
         }
     }
